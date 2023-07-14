@@ -1,13 +1,17 @@
 ---
 id: 939gmhkqzlecti344zmq5sa
-title: Gpt_sense_standard
-desc: ''
-updated: 1689334624197
+title: Can Gpt Sense Standard
+desc: 'This is an experiment to check if GPT can aptly sense std.ids that a particular incident can teach'
+updated: 1689335183577
 created: 1689333789749
 ---
+
+
+# Experiment to check if GPT can aptly sense std.ids that a particular incident can teach
+
 ## DoD
-- [ ] Get a conclusion whether GPT's sense of what concepts fit best is accurate
-- [ ] Get a conclusion whether GPT is able to map concepts to valid NGSS standard ids.
+- [x] Get a conclusion whether GPT's sense of what concepts fit best is accurate
+- [x] Get a conclusion whether GPT is able to map concepts to valid NGSS standard ids.
 
 
 ## Parameters
@@ -63,12 +67,12 @@ Have the output as valid JSON enclosed in double quotes and nothing else!
 {{~/assistant}}
 """
 ```
--for extracting topics from the NGSS standard:
+- for extracting topics from the NGSS standard:
 
-Given a concept, type out it's teaching scope like:
 ```python
 """
 {{#system~}}
+Given a concept, type out it's teaching scope like:
 if the concept was allergies:
 allergies, antihistamines, and our body's natural immunity would include the following concepts: Immune System Function, Allergen Recognition, Allergic Reactions, Histamine Role, Antihistamine Mechanism of Action, Immune Response, Innate Immunity, Adaptive Immunity, Immune Cells, Antibodies, Mast Cells, Immunoglobulin E (IgE), Allergy Symptoms, Allergy Types (Food Allergies, Skin Allergies, Respiratory Allergies), Allergy Diagnosis, Allergy Treatments, Antihistamine Types, Antihistamine Side Effects, Immune System Disorders, Autoimmunity, Hypersensitivity, Immunodeficiency, Tolerance, Vaccination, Immunotherapy, and Allergy Prevention.
 And if it's part of a curriculum , make sure the topics are under scope
