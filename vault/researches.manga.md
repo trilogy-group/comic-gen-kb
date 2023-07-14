@@ -2,7 +2,7 @@
 id: t1xyd7s1l2a1ao327c24smk
 title: Manga
 desc: ''
-updated: 1689370134196
+updated: 1689370191925
 created: 1689346754464
 ---
 # Research : Manga and how is it different from regular comics?
@@ -10,7 +10,7 @@ created: 1689346754464
 ## DoD
 - [x] Find out what makes mangas different from normal comics
 - [x] What is the skeleton of a good manga?
-- [ ] Details on Manga making process
+- [x] Details on Manga making process
 
 ## References
 - https://www.nypl.org/blog/2018/12/27/beginners-guide-manga#:~:text=Unlike%20American%20comic%20books%2C%20which,norm%20for%20English%20language%20publications
