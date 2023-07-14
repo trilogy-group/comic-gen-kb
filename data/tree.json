@@ -1,0 +1,91 @@
+{
+  "roots": [
+    {
+      "key": "wn8PE1RhG0znK1alrGFYv",
+      "title": "Root",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "navExclude": false,
+      "children": [
+        {
+          "key": "851xp22233jr4l9woml19un",
+          "title": "Experiments",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "939gmhkqzlecti344zmq5sa",
+              "title": "Can Gpt Sense Standard",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": []
+            },
+            {
+              "key": "ismnvheig4kk1lqqb2qqjz7",
+              "title": "Can Gpt Teach Concepts opposite to Incidents",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "spyuk5upewy9qpqlcj03z36",
+          "title": "Other Documents",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "f58nknb7ddf7t09538vd0w5",
+              "title": "Dendron",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "fnhs577xc0bxbeg6v4lku5o",
+          "title": "Researches",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "t1xyd7s1l2a1ao327c24smk",
+              "title": "Manga",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "403": null,
+    "wn8PE1RhG0znK1alrGFYv": null,
+    "fnhs577xc0bxbeg6v4lku5o": "wn8PE1RhG0znK1alrGFYv",
+    "t1xyd7s1l2a1ao327c24smk": "fnhs577xc0bxbeg6v4lku5o",
+    "spyuk5upewy9qpqlcj03z36": "wn8PE1RhG0znK1alrGFYv",
+    "f58nknb7ddf7t09538vd0w5": "spyuk5upewy9qpqlcj03z36",
+    "851xp22233jr4l9woml19un": "wn8PE1RhG0znK1alrGFYv",
+    "ismnvheig4kk1lqqb2qqjz7": "851xp22233jr4l9woml19un",
+    "939gmhkqzlecti344zmq5sa": "851xp22233jr4l9woml19un"
+  }
+}

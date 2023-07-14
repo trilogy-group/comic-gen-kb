@@ -1,0 +1,229 @@
+<h1 id="can-gpt-teach-concepts-opposite-to-incidents"><a aria-hidden="true" class="anchor-heading icon-link" href="#can-gpt-teach-concepts-opposite-to-incidents"></a>Can Gpt Teach Concepts opposite to Incidents</h1>
+<h2 id="parameters"><a aria-hidden="true" class="anchor-heading icon-link" href="#parameters"></a>Parameters</h2>
+<h3 id="dependent"><a aria-hidden="true" class="anchor-heading icon-link" href="#dependent"></a>Dependent</h3>
+<ul>
+<li>Story</li>
+</ul>
+<h3 id="independent"><a aria-hidden="true" class="anchor-heading icon-link" href="#independent"></a>Independent</h3>
+<ul>
+<li>Teaching Scope</li>
+</ul>
+<h3 id="control"><a aria-hidden="true" class="anchor-heading icon-link" href="#control"></a>Control</h3>
+<ul>
+<li>GPT-4</li>
+<li>Prompt</li>
+<li>Incident</li>
+</ul>
+<h2 id="the-prompt"><a aria-hidden="true" class="anchor-heading icon-link" href="#the-prompt"></a>The prompt</h2>
+<ul>
+<li>
+<p>"incident-narration.0.0.0" for the script</p>
+</li>
+<li>
+<p>And the following prompt for extracting teaching scope from concept:</p>
+</li>
+</ul>
+<pre class="language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+{{#system~}}
+Given a concept, type out it's teaching scope like:
+
+if the concept was allergies:
+allergies, antihistamines, and our body's natural immunity would include the following concepts: Immune System Function, Allergen Recognition, Allergic Reactions, Histamine Role, Antihistamine Mechanism of Action, Immune Response, Innate Immunity, Adaptive Immunity, Immune Cells, Antibodies, Mast Cells, Immunoglobulin E (IgE), Allergy Symptoms, Allergy Types (Food Allergies, Skin Allergies, Respiratory Allergies), Allergy Diagnosis, Allergy Treatments, Antihistamine Types, Antihistamine Side Effects, Immune System Disorders, Autoimmunity, Hypersensitivity, Immunodeficiency, Tolerance, Vaccination, Immunotherapy, and Allergy Prevention.
+
+{{~/system}}
+{{#user~}}
+{{concept}}
+{{~/user}}
+{{#assistant~}}
+{{gen 'teaching_scope' temperature=0 max_tokens=1500}}
+{{~/assistant}}
+"""</span>
+</code></pre>
+<h2 id="the-incident"><a aria-hidden="true" class="anchor-heading icon-link" href="#the-incident"></a>The Incident</h2>
+<ul>
+<li>Syed was walking down the roads of pune when he found an cat abandoned on the side of the road. He decided to adopt the cat and take it home. Soon he realised that he was developing rashes around his skin because of the cat and fell sick. He was stubborn to keep the cat home and fight the allergy. Soon he became immune to it.</li>
+</ul>
+<h2 id="teaching-scopes"><a aria-hidden="true" class="anchor-heading icon-link" href="#teaching-scopes"></a>Teaching Scopes</h2>
+<ul>
+<li>allergies</li>
+<li>photosynthesis</li>
+<li>mitosis</li>
+<li>osmosis</li>
+</ul>
+<h2 id="output-1"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-1"></a>Output 1</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> allergies
+
+teaching_scope <span class="token operator">:</span> allergies<span class="token punctuation">,</span> antihistamines<span class="token punctuation">,</span> and our body's natural immunity would include the following concepts<span class="token operator">:</span> Immune System Function<span class="token punctuation">,</span> Allergen Recognition<span class="token punctuation">,</span> Allergic Reactions<span class="token punctuation">,</span> Histamine Role<span class="token punctuation">,</span> Antihistamine Mechanism of Action<span class="token punctuation">,</span> Immune Response<span class="token punctuation">,</span> Innate Immunity<span class="token punctuation">,</span> Adaptive Immunity<span class="token punctuation">,</span> Immune Cells<span class="token punctuation">,</span> Antibodies<span class="token punctuation">,</span> Mast Cells<span class="token punctuation">,</span> Immunoglobulin E (IgE)<span class="token punctuation">,</span> Allergy Symptoms<span class="token punctuation">,</span> Allergy Types (Food Allergies<span class="token punctuation">,</span> Skin Allergies<span class="token punctuation">,</span> Respiratory Allergies)<span class="token punctuation">,</span> Allergy Diagnosis<span class="token punctuation">,</span> Allergy Treatments<span class="token punctuation">,</span> Antihistamine Types<span class="token punctuation">,</span> Antihistamine Side Effects<span class="token punctuation">,</span> Immune System Disorders<span class="token punctuation">,</span> Autoimmunity<span class="token punctuation">,</span> Hypersensitivity<span class="token punctuation">,</span> Immunodeficiency<span class="token punctuation">,</span> Tolerance<span class="token punctuation">,</span> Vaccination<span class="token punctuation">,</span> Immunotherapy<span class="token punctuation">,</span> and Allergy Prevention.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed, who develops an allergy after adopting a stray cat. The comic will visually depict the internal workings of the immune system, the allergic reaction, and the process of developing immunity. The incident of Syed adopting the cat and developing an allergy is the crux of the story. The comic will use this incident to explain the concepts of allergies, antihistamines, and immunity. The climax is when Syed's symptoms start to lessen, and the resolution is when he becomes immune to his cat allergy."</span><span class="token punctuation">,</span>
+
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span>
+<span class="token string">"Panel 1: In the bustling city of Pune, we meet Syed, a kind-hearted man with a love for animals."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 2: One day, Syed stumbles upon a stray cat and decides to adopt it."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 3: Soon after bringing the cat home, Syed starts to develop rashes on his skin and falls sick."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 4: This is Syed's immune system reacting to the cat's dander as if it were a harmful substance."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 5: We delve into the immune system's function, explaining how it recognizes allergens and triggers an allergic reaction."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 6: Despite his discomfort, Syed is determined to keep the cat. He visits a doctor who diagnoses him with a cat allergy."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 7: The doctor prescribes antihistamines, and we explore how these drugs block the effects of histamine."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 8: Syed struggles with his symptoms but remains steadfast in his decision to keep the cat."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 9: Over time, his symptoms start to lessen. This is Syed's body learning to recognize the cat dander as harmless."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 10: We explain the concepts of innate and adaptive immunity, showing how Syed's immune response is reducing his allergic reaction."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 11: Finally, Syed has become immune to his cat allergy. This transformation is a result of his immune system's adaptive response."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 12: We touch upon the concepts of immune system disorders, autoimmunity, hypersensitivity, and immunodeficiency."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 13: We conclude by discussing allergy prevention, vaccination, and immunotherapy, providing a comprehensive understanding of allergies and our body's natural immunity."</span>
+<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insights"><a aria-hidden="true" class="anchor-heading icon-link" href="#insights"></a>Insights</h3>
+<ul>
+<li>The prompt is weak but we can see GPT's efforts trying to teach:
+<ul>
+<li>That allergies are caused due to histamines</li>
+<li>immune system</li>
+<li>hypersensitivity, etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="output-2"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-2"></a>Output 2</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> photosynthesis
+
+teaching_scope <span class="token operator">:</span> Photosynthesis<span class="token punctuation">,</span> chloroplasts<span class="token punctuation">,</span> and plant energy conversion would include the following concepts<span class="token operator">:</span> Photosynthesis Process<span class="token punctuation">,</span> Light-Dependent Reactions<span class="token punctuation">,</span> Light-Independent Reactions (Calvin Cycle)<span class="token punctuation">,</span> Chloroplast Structure<span class="token punctuation">,</span> Chlorophyll<span class="token punctuation">,</span> Photosynthetic Pigments<span class="token punctuation">,</span> Energy Conversion<span class="token punctuation">,</span> ATP (Adenosine Triphosphate)<span class="token punctuation">,</span> NADPH<span class="token punctuation">,</span> Carbon Dioxide Fixation<span class="token punctuation">,</span> Oxygen Evolution<span class="token punctuation">,</span> Stomata<span class="token punctuation">,</span> Photosystems I and II<span class="token punctuation">,</span> Electron Transport Chain<span class="token punctuation">,</span> Photophosphorylation<span class="token punctuation">,</span> Carbon Cycle<span class="token punctuation">,</span> Photorespiration<span class="token punctuation">,</span> C3<span class="token punctuation">,</span> C4<span class="token punctuation">,</span> and CAM Plants<span class="token punctuation">,</span> Factors Affecting Photosynthesis (Light Intensity<span class="token punctuation">,</span> Carbon Dioxide Concentration<span class="token punctuation">,</span> Temperature)<span class="token punctuation">,</span> Cellular Respiration<span class="token punctuation">,</span> and the Role of Photosynthesis in the Ecosystem.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed, a young man who adopts a stray cat despite being allergic to it. The comic uses this incident to explain the concept of photosynthesis and how plants adapt to their environment. The plot points include Syed's decision to adopt the cat, his allergic reaction, his research into allergies and immunity, his efforts to build up his immunity, and finally, his success in overcoming the allergy. The comic also delves deep into the process of photosynthesis, explaining various aspects such as light-dependent and light-independent reactions, ATP and NADPH creation, carbon dioxide fixation, oxygen evolution, stomata, photosystems I and II, electron transport chain, photophosphorylation, carbon cycle, photorespiration, C3, C4, and CAM plants, factors affecting photosynthesis, cellular respiration, and the role of photosynthesis in the ecosystem."</span><span class="token punctuation">,</span>
+
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"In the bustling city of Pune, we meet Syed, a compassionate young man with a love for nature and animals. One day, he stumbles upon a stray cat and decides to adopt it."</span><span class="token punctuation">,</span> <span class="token string">"Despite developing rashes, a sign of an allergic reaction, Syed is determined to keep the cat. Meanwhile, we delve into the concept of photosynthesis, the process by which plants synthesize food using sunlight."</span><span class="token punctuation">,</span> <span class="token string">"As Syed's condition worsens, he begins to understand his allergy. He learns about the immune system and how it reacts to foreign substances, much like how plants react to changes in their environment."</span><span class="token punctuation">,</span> <span class="token string">"We delve deeper into photosynthesis, explaining the light-dependent and light-independent reactions, the creation of ATP and NADPH, and the fixation of carbon dioxide."</span><span class="token punctuation">,</span> <span class="token string">"Syed starts taking small doses of cat dander, gradually building up his immunity. Similarly, we explain how plants adapt to different conditions, introducing C3, C4, and CAM plants."</span><span class="token punctuation">,</span> <span class="token string">"Finally, Syed's efforts pay off, and he becomes immune to the cat dander. He learns that challenges can be overcome with patience and perseverance."</span><span class="token punctuation">,</span> <span class="token string">"We wrap up the concept of photosynthesis, discussing the role of photosystems I and II, the electron transport chain, and photophosphorylation."</span><span class="token punctuation">,</span> <span class="token string">"We explain the carbon cycle and the role of photosynthesis in the ecosystem, emphasizing the importance of plants in maintaining the balance of life on Earth."</span><span class="token punctuation">,</span> <span class="token string">"Lastly, we touch upon cellular respiration, the process by which organisms convert biochemical energy from nutrients into ATP, and then release waste products."</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insights-1"><a aria-hidden="true" class="anchor-heading icon-link" href="#insights-1"></a>Insights</h3>
+<ul>
+<li>GPT is forcing the two concepts to be merged together and is trying random analogies</li>
+<li>The value of the story is lost as in the end it proceeds to independently explain photosynthesis</li>
+</ul>
+<h2 id="output-3"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-3"></a>Output 3</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> mitosis
+
+teaching_scope <span class="token operator">:</span> The teaching scope for mitosis would include the following concepts<span class="token operator">:</span> Cell Cycle<span class="token punctuation">,</span> Interphase<span class="token punctuation">,</span> Prophase<span class="token punctuation">,</span> Prometaphase<span class="token punctuation">,</span> Metaphase<span class="token punctuation">,</span> Anaphase<span class="token punctuation">,</span> Telophase<span class="token punctuation">,</span> Cytokinesis<span class="token punctuation">,</span> Chromosomes<span class="token punctuation">,</span> Chromatids<span class="token punctuation">,</span> Centromeres<span class="token punctuation">,</span> Spindle Fibers<span class="token punctuation">,</span> Centrioles<span class="token punctuation">,</span> Nuclear Membrane<span class="token punctuation">,</span> Cell Division<span class="token punctuation">,</span> DNA Replication<span class="token punctuation">,</span> Genetic Material<span class="token punctuation">,</span> Cell Growth<span class="token punctuation">,</span> Cell Differentiation<span class="token punctuation">,</span> Cell Regeneration<span class="token punctuation">,</span> Cell Death (Apoptosis)<span class="token punctuation">,</span> Mitotic Errors<span class="token punctuation">,</span> Cancer and Tumors<span class="token punctuation">,</span> Cell Cycle Regulation<span class="token punctuation">,</span> Checkpoints in Cell Cycle<span class="token punctuation">,</span> Role of Enzymes in Cell Division<span class="token punctuation">,</span> Mitosis in Plants vs Animals<span class="token punctuation">,</span> and Laboratory Techniques for Studying Mitosis.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed, who adopts a stray cat and develops an allergic reaction. This incident is used to explain the concept of cell division and growth. The plot points include Syed's decision to keep the cat despite the allergy, his worsening condition, and his eventual recovery. The characters are Syed and his immune cells, which undergo a transformation to become allergy-resistant. The emotions are shown through Syed's determination to keep the cat and his struggle with the allergy. The comic has a smooth continuity, with each panel leading to the next. The narration is engaging and explains the concept in detail."</span><span class="token punctuation">,</span>
+
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"In the bustling city of Pune, we meet Syed, a compassionate man who stumbles upon a stray cat."</span><span class="token punctuation">,</span> <span class="token string">"Despite developing an allergic reaction, Syed decides to keep the cat."</span><span class="token punctuation">,</span> <span class="token string">"We delve into Syed's body, witnessing the rapid division and growth of his cells."</span><span class="token punctuation">,</span> <span class="token string">"Through the stages of mitosis, we see Syed's cells preparing to fight the allergen."</span><span class="token punctuation">,</span> <span class="token string">"Despite the cell division, Syed's condition worsens, and he falls severely ill."</span><span class="token punctuation">,</span> <span class="token string">"In a turn of events, Syed's body begins to adapt. His immune cells learn to recognize the allergen."</span><span class="token punctuation">,</span> <span class="token string">"Syed's immune cells differentiate, becoming specialized and resistant to the allergy."</span><span class="token punctuation">,</span> <span class="token string">"Syed's skin heals, a result of cell regeneration."</span><span class="token punctuation">,</span> <span class="token string">"The overactive immune cells die off, a process known as apoptosis."</span><span class="token punctuation">,</span> <span class="token string">"Finally, Syed recovers, living happily with his cat, immune to the allergy."</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insights-2"><a aria-hidden="true" class="anchor-heading icon-link" href="#insights-2"></a>Insights</h3>
+<ul>
+<li>It actually managed to incorporate mitosis into the story quite well..</li>
+</ul>
+<h2 id="output-4"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-4"></a>Output 4</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> osmosis
+
+teaching_scope <span class="token operator">:</span> osmosis<span class="token punctuation">,</span> diffusion<span class="token punctuation">,</span> and cell membrane permeability would include the following concepts<span class="token operator">:</span> Cell Membrane Structure<span class="token punctuation">,</span> Passive Transport<span class="token punctuation">,</span> Active Transport<span class="token punctuation">,</span> Concentration Gradients<span class="token punctuation">,</span> Hypertonic Solutions<span class="token punctuation">,</span> Hypotonic Solutions<span class="token punctuation">,</span> Isotonic Solutions<span class="token punctuation">,</span> Water Potential<span class="token punctuation">,</span> Solvent and Solute<span class="token punctuation">,</span> Semi-permeable Membranes<span class="token punctuation">,</span> Diffusion<span class="token punctuation">,</span> Facilitated Diffusion<span class="token punctuation">,</span> Ion Channels<span class="token punctuation">,</span> Carrier Proteins<span class="token punctuation">,</span> Osmotic Pressure<span class="token punctuation">,</span> Osmoregulation<span class="token punctuation">,</span> Turgor Pressure<span class="token punctuation">,</span> Plasmolysis<span class="token punctuation">,</span> Cytolysis<span class="token punctuation">,</span> Endocytosis<span class="token punctuation">,</span> Exocytosis<span class="token punctuation">,</span> Phagocytosis<span class="token punctuation">,</span> Pinocytosis<span class="token punctuation">,</span> Aquaporins<span class="token punctuation">,</span> Role of Osmosis in Kidney Function<span class="token punctuation">,</span> Role of Osmosis in Plant Cells<span class="token punctuation">,</span> and Osmosis in Everyday Life.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed and his adopted cat. The incident of Syed developing an allergy to the cat and then overcoming it serves as a perfect backdrop to explain the concepts of osmosis, diffusion, and cell membrane permeability. The allergens from the cat serve as the trigger for the immune response, which allows us to delve into the workings of the cell membrane and the transport of substances across it. The climax is Syed's body adapting to the allergens, which is a testament to the body's ability to learn and adapt. The resolution is Syed living peacefully with his cat, having overcome his allergy. This story allows us to explain the concepts in a relatable and engaging manner."</span><span class="token punctuation">,</span>
+
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Our story begins in the bustling city of Pune, where we meet Syed, a kind-hearted man with a love for animals."</span><span class="token punctuation">,</span> <span class="token string">"One day, Syed stumbles upon a stray cat, abandoned and alone. He decides to adopt the cat and bring it home."</span><span class="token punctuation">,</span> <span class="token string">"However, things take a turn when Syed starts developing rashes on his skin, a clear sign of an allergic reaction to the cat."</span><span class="token punctuation">,</span> <span class="token string">"Despite this, Syed is determined to keep the cat and fight off the allergy."</span><span class="token punctuation">,</span> <span class="token string">"As Syed's body reacts to the cat's allergens, we zoom into his body at a cellular level."</span><span class="token punctuation">,</span> <span class="token string">"We see the allergens coming into contact with Syed's cells, introducing the concept of the cell membrane and its semi-permeability."</span><span class="token punctuation">,</span> <span class="token string">"The allergens diffuse across the cell membrane, moving from an area of high concentration to an area of low concentration."</span><span class="token punctuation">,</span> <span class="token string">"This triggers an immune response, causing the rashes on Syed's skin."</span><span class="token punctuation">,</span> <span class="token string">"However, Syed's body starts to adapt. His cells begin to produce antibodies, which are transported out of the cells through active transport."</span><span class="token punctuation">,</span> <span class="token string">"These antibodies bind to the allergens, neutralizing them."</span><span class="token punctuation">,</span> <span class="token string">"Over time, Syed's body becomes more efficient at this process, and he becomes immune to the cat's allergens."</span><span class="token punctuation">,</span> <span class="token string">"Syed's body has now adapted to the cat's allergens. He no longer develops rashes and can live peacefully with his new pet."</span><span class="token punctuation">,</span> <span class="token string">"This transformation is a result of his body's ability to regulate the movement of substances across the cell membrane, a process known as osmoregulation."</span><span class="token punctuation">,</span> <span class="token string">"We end the comic with a broader look at how these concepts apply in everyday life, such as the role of osmosis in kidney function and plant cells, and how our bodies constantly adapt to our environment."</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insight"><a aria-hidden="true" class="anchor-heading icon-link" href="#insight"></a>Insight</h3>
+<ul>
+<li>This actually ended up being a pretty good comic and it found a neat way to show osmosis through the incident.</li>
+</ul>
+<h2 id="conclusion"><a aria-hidden="true" class="anchor-heading icon-link" href="#conclusion"></a>Conclusion</h2>
+<ul>
+<li>Prompt was weak but the attempt from GPT to merge the concept into the incident could be graded</li>
+<li>In photosynthesis, it failed and wasn't able to generate any value and tried baseless analogies between them</li>
+<li>In osmosis, mitosis it was surprisingly able to use the incident as reference and teach the concept</li>
+</ul>
+<h2 id="note"><a aria-hidden="true" class="anchor-heading icon-link" href="#note"></a>Note</h2>
+<ul>
+<li>The concepts chosen can be considered bias so will be retrying it with bit more diverse concepts as all previous ones were from life sciences</li>
+</ul>
+<h2 id="teaching-scopes-1"><a aria-hidden="true" class="anchor-heading icon-link" href="#teaching-scopes-1"></a>Teaching Scopes</h2>
+<ul>
+<li>newton's laws of motion</li>
+<li>random variables</li>
+<li>French Revolution</li>
+</ul>
+<h2 id="output-5"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-5"></a>Output 5</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> newton's laws of motion
+
+teaching_scope <span class="token operator">:</span> Newton's Laws of Motion<span class="token punctuation">,</span> forces<span class="token punctuation">,</span> and their effects on motion would include the following concepts<span class="token operator">:</span> Newton's First Law (Law of Inertia)<span class="token punctuation">,</span> Newton's Second Law (F=ma)<span class="token punctuation">,</span> Newton's Third Law (Action-Reaction)<span class="token punctuation">,</span> Force<span class="token punctuation">,</span> Mass<span class="token punctuation">,</span> Acceleration<span class="token punctuation">,</span> Inertia<span class="token punctuation">,</span> Momentum<span class="token punctuation">,</span> Friction<span class="token punctuation">,</span> Gravity<span class="token punctuation">,</span> Centripetal Force<span class="token punctuation">,</span> Equilibrium<span class="token punctuation">,</span> Net Force<span class="token punctuation">,</span> Balanced and Unbalanced Forces<span class="token punctuation">,</span> Free Body Diagrams<span class="token punctuation">,</span> Kinematics<span class="token punctuation">,</span> Dynamics<span class="token punctuation">,</span> Impulse<span class="token punctuation">,</span> Conservation of Momentum<span class="token punctuation">,</span> Elastic and Inelastic Collisions<span class="token punctuation">,</span> Weight<span class="token punctuation">,</span> Normal Force<span class="token punctuation">,</span> Tension<span class="token punctuation">,</span> Drag<span class="token punctuation">,</span> Terminal Velocity<span class="token punctuation">,</span> Projectile Motion<span class="token punctuation">,</span> Circular Motion<span class="token punctuation">,</span> Work<span class="token punctuation">,</span> Energy<span class="token punctuation">,</span> Power<span class="token punctuation">,</span> Potential Energy<span class="token punctuation">,</span> Kinetic Energy<span class="token punctuation">,</span> Mechanical Energy<span class="token punctuation">,</span> Conservation of Energy<span class="token punctuation">,</span> Simple Machines<span class="token punctuation">,</span> and Applications of Newton's Laws in Everyday Life.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed, a physics teacher, and his adopted cat, Newton. The incidents in their life together serve as practical examples of Newton's Laws of Motion. Syed's struggle with his cat allergy and his eventual adaptation to it mirrors the concept of forces and equilibrium in physics. The comic will visually depict these incidents and their corresponding physics concepts, making the subject more relatable and engaging for students. The climax is Syed falling seriously ill due to his allergy, and the resolution is his recovery and continued use of his experiences with Newton as teaching tools."</span><span class="token punctuation">,</span>
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span>
+<span class="token string">"Panel 1: In the bustling city of Pune, we meet Syed, a physics teacher with a heart of gold."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 2: One day, Syed finds an abandoned cat on the side of the road."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 3: Despite his allergies, Syed adopts the cat, naming it Newton."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 4: Syed's life with Newton becomes a series of challenges, each mirroring a concept from Newton's Laws of Motion."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 5: Newton jumps off a high shelf, demonstrating Gravity."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 6: Newton lands without injury, illustrating the Law of Inertia."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 7: Newton pushes a vase off the table, exemplifying the Action-Reaction principle."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 8: Syed's allergy worsens, but he persists, demonstrating Newton's First Law."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 9: Syed falls seriously ill, marking the climax of our story."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 10: Syed's immune system finally adapts, illustrating the concept of equilibrium in physics."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 11: Syed recovers, having learned that every action in life has an equal and opposite reaction."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 12: Syed continues to use his experiences with Newton to teach his students about physics, transforming his ordeal into a powerful teaching tool."</span>
+<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insights-3"><a aria-hidden="true" class="anchor-heading icon-link" href="#insights-3"></a>Insights</h3>
+<ul>
+<li>I liked the idea of using the cat and naming it newton to show some laws of motion</li>
+<li>Overall I did feel it was engaging</li>
+</ul>
+<h2 id="output-6"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-6"></a>Output 6</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> random variables
+
+teaching_scope <span class="token operator">:</span> The teaching scope for the concept of random variables would include the following concepts<span class="token operator">:</span> Definition of Random Variables<span class="token punctuation">,</span> Discrete Random Variables<span class="token punctuation">,</span> Continuous Random Variables<span class="token punctuation">,</span> Probability Distribution<span class="token punctuation">,</span> Probability Mass Function<span class="token punctuation">,</span> Probability Density Function<span class="token punctuation">,</span> Cumulative Distribution Function<span class="token punctuation">,</span> Expected Value<span class="token punctuation">,</span> Variance<span class="token punctuation">,</span> Standard Deviation<span class="token punctuation">,</span> Covariance<span class="token punctuation">,</span> Correlation<span class="token punctuation">,</span> Joint Distribution<span class="token punctuation">,</span> Marginal Distribution<span class="token punctuation">,</span> Conditional Distribution<span class="token punctuation">,</span> Independence of Random Variables<span class="token punctuation">,</span> Transformations of Random Variables<span class="token punctuation">,</span> Moment Generating Functions<span class="token punctuation">,</span> Common Distributions (Binomial<span class="token punctuation">,</span> Poisson<span class="token punctuation">,</span> Uniform<span class="token punctuation">,</span> Normal<span class="token punctuation">,</span> Exponential<span class="token punctuation">,</span> etc.)<span class="token punctuation">,</span> Central Limit Theorem<span class="token punctuation">,</span> Law of Large Numbers<span class="token punctuation">,</span> Chebyshev's Inequality<span class="token punctuation">,</span> and Applications of Random Variables in Statistics and Probability.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed, a statistician who adopts a cat despite being allergic to it. The allergy becomes a real-life example of a random variable, which Syed uses to explain the concept of random variables, probability distribution, expected value, variance, and standard deviation. The story is visually rich, with scenes of Syed's allergic reactions, his calculations, and his interactions with the cat. The climax is when Syed becomes immune to his allergy, symbolizing his mastery over the concept of random variables. The resolution is Syed's realization of the practical applications of statistics and probability, and his decision to teach these concepts to others."</span><span class="token punctuation">,</span>
+
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"In the bustling city of Pune, we meet Syed, a young statistician with a heart of gold. He stumbles upon a stray cat and decides to adopt it, despite his allergies."</span><span class="token punctuation">,</span> <span class="token string">"Syed names the cat 'Variable' and starts developing rashes and falling sick due to his allergy."</span><span class="token punctuation">,</span> <span class="token string">"Syed decides to approach his allergy statistically. He starts recording the frequency and intensity of his allergic reactions, treating them as 'random variables'."</span><span class="token punctuation">,</span> <span class="token string">"Syed explains to Variable that a random variable is a variable whose possible values are numerical outcomes of a random phenomenon."</span><span class="token punctuation">,</span> <span class="token string">"He further explains that there are two types of random variables: discrete and continuous. His allergic reactions are a discrete random variable, as they can only take on a finite number of values."</span><span class="token punctuation">,</span> <span class="token string">"Syed introduces the concept of a probability distribution, which describes the likelihood of each outcome. He calculates the probability of having a severe allergic reaction on any given day, using the probability mass function."</span><span class="token punctuation">,</span> <span class="token string">"He also calculates the expected value, variance, and standard deviation of his allergic reactions. As his understanding improves, he starts taking preventive measures, reducing the frequency and intensity of his allergic reactions."</span><span class="token punctuation">,</span> <span class="token string">"The climax occurs when Syed realizes that he has become immune to his allergy. He reflects on his journey, realizing that his allergy was a blessing in disguise."</span><span class="token punctuation">,</span> <span class="token string">"Syed shares his insights with his colleagues, explaining how he used the concepts of probability distribution, expected value, variance, and standard deviation to manage his allergy."</span><span class="token punctuation">,</span> <span class="token string">"Syed's transformation is complete when he realizes that he can use his knowledge of statistics and probability to solve real-world problems. He decides to dedicate his life to teaching these concepts to others, starting with Variable, who has been his faithful companion throughout his ordeal."</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insights-4"><a aria-hidden="true" class="anchor-heading icon-link" href="#insights-4"></a>Insights</h3>
+<ul>
+<li>It had a great way of incorporating random variables through tracking the stage of allergies, and with improvements in prompts it can teach the concept by diving deep into each of these panels as well!</li>
+</ul>
+<h2 id="output-7"><a aria-hidden="true" class="anchor-heading icon-link" href="#output-7"></a>Output 7</h2>
+<pre class="language-json"><code class="language-json">Concept <span class="token operator">:</span> French Revolution
+
+teaching_scope <span class="token operator">:</span> The teaching scope for the French Revolution would include the following concepts<span class="token operator">:</span> Causes of the French Revolution<span class="token punctuation">,</span> Enlightenment Ideas<span class="token punctuation">,</span> Economic Crisis<span class="token punctuation">,</span> Social Inequality<span class="token punctuation">,</span> Estates-General<span class="token punctuation">,</span> National Assembly<span class="token punctuation">,</span> Storming of the Bastille<span class="token punctuation">,</span> Declaration of the Rights of Man and of the Citizen<span class="token punctuation">,</span> Women's March on Versailles<span class="token punctuation">,</span> French Revolutionary Wars<span class="token punctuation">,</span> Reign of Terror<span class="token punctuation">,</span> Guillotine<span class="token punctuation">,</span> Maximilien Robespierre<span class="token punctuation">,</span> Committee of Public Safety<span class="token punctuation">,</span> Thermidorian Reaction<span class="token punctuation">,</span> The Directory<span class="token punctuation">,</span> Napoleon Bonaparte<span class="token punctuation">,</span> Coup of <span class="token number">18</span> Brumaire<span class="token punctuation">,</span> Napoleonic Wars<span class="token punctuation">,</span> The Consulate<span class="token punctuation">,</span> The French Empire<span class="token punctuation">,</span> The Concordat<span class="token punctuation">,</span> The Napoleonic Code<span class="token punctuation">,</span> Battle of Waterloo<span class="token punctuation">,</span> The Congress of Vienna<span class="token punctuation">,</span> and Legacy of the French Revolution.
+
+Narration <span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">"Chain of Thought"</span><span class="token operator">:</span><span class="token string">"The story revolves around Syed, a history teacher, who adopts a cat despite being allergic to it. His struggle with the allergy and eventual immunity is used as a metaphor to explain the French Revolution. The comic will visually depict Syed's journey and parallel it with the events of the French Revolution. The climax is Syed's immunity to the cat's allergens, which is likened to the fall of Robespierre and the establishment of The Directory. The resolution is Syed's peaceful coexistence with the cat, reflecting the legacy of the French Revolution."</span><span class="token punctuation">,</span>
+
+<span class="token property">"Narration"</span> <span class="token operator">:</span> <span class="token punctuation">[</span>
+<span class="token string">"Panel 1: In the bustling city of Pune, Syed, a history teacher, finds an abandoned cat."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 2: Despite his allergies, Syed decides to adopt the cat, setting the stage for a struggle."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 3: Syed starts developing rashes, mirroring the social inequality and economic crisis that led to the French Revolution."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 4: As Syed fights his body's reaction to the cat, we delve into the causes of the French Revolution."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 5: Syed's determination to keep the cat parallels the French people's fight for their rights."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 6: Syed's health deteriorates, reaching the climax of the French Revolution with the Reign of Terror."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 7: Syed becomes immune to the cat's allergens, symbolizing the fall of Robespierre and the establishment of The Directory."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 8: Syed undergoes a transformation, becoming immune to the cat's allergens."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 9: This mirrors the rise of Napoleon Bonaparte and the establishment of the French Empire."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 10: Syed's newfound peace with the cat is likened to the Concordat."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 11: Syed adapts to living with the cat, reflecting the Napoleonic Code."</span><span class="token punctuation">,</span>
+<span class="token string">"Panel 12: The comic ends with Syed living harmoniously with the cat, symbolizing the legacy of the French Revolution."</span>
+<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="insights-5"><a aria-hidden="true" class="anchor-heading icon-link" href="#insights-5"></a>Insights</h3>
+<ul>
+<li>French Revolution being a big topic but it was able to summarise it through incidents without making it feel too unnatural</li>
+</ul>
+<h2 id="conclusion-1"><a aria-hidden="true" class="anchor-heading icon-link" href="#conclusion-1"></a>Conclusion</h2>
+<ul>
+<li>
+<p>Almost all cases, GPT does manage to relate seemingly opposite topics to the incident</p>
+</li>
+<li>
+<p>Also another observation is that the deviation from original story is minimal in case of allergies hence would be preferred by the customer the most</p>
+</li>
+</ul>

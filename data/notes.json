@@ -1,0 +1,787 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": "vault"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1689370271319,
+      "created": 1689370271319,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "wn8PE1RhG0znK1alrGFYv": {
+      "id": "wn8PE1RhG0znK1alrGFYv",
+      "title": "Root",
+      "desc": "",
+      "updated": 1689336026010,
+      "created": 1631901573363,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "218a6d5764c2b5aefaded9886d7b317e",
+      "links": [],
+      "anchors": {
+        "welcome-to-comic-gen-kb": {
+          "type": "header",
+          "text": "Welcome to Comic Gen KB",
+          "value": "welcome-to-comic-gen-kb",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "851xp22233jr4l9woml19un",
+        "spyuk5upewy9qpqlcj03z36",
+        "fnhs577xc0bxbeg6v4lku5o"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "fnhs577xc0bxbeg6v4lku5o": {
+      "id": "fnhs577xc0bxbeg6v4lku5o",
+      "title": "Researches",
+      "desc": "",
+      "updated": 1689334674955,
+      "created": 1689333540247,
+      "custom": {},
+      "fname": "researches",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "71ed8b02a8ccf3c6a056aec69d75c21f",
+      "links": [],
+      "anchors": {
+        "welcome-to-the-research-page": {
+          "type": "header",
+          "text": "Welcome to the Research page",
+          "value": "welcome-to-the-research-page",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "t1xyd7s1l2a1ao327c24smk"
+      ],
+      "parent": "wn8PE1RhG0znK1alrGFYv",
+      "data": {}
+    },
+    "t1xyd7s1l2a1ao327c24smk": {
+      "id": "t1xyd7s1l2a1ao327c24smk",
+      "title": "Manga",
+      "desc": "",
+      "updated": 1689370191925,
+      "created": 1689346754464,
+      "custom": {},
+      "fname": "researches.manga",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "d890bc94b011d9cc51c7c7e7a7305e5d",
+      "links": [],
+      "anchors": {
+        "research--manga-and-how-is-it-different-from-regular-comics": {
+          "type": "header",
+          "text": "Research : Manga and how is it different from regular comics?",
+          "value": "research--manga-and-how-is-it-different-from-regular-comics",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "dod": {
+          "type": "header",
+          "text": "DoD",
+          "value": "dod",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "manga-genre": {
+          "type": "header",
+          "text": "Manga Genre",
+          "value": "manga-genre",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "insights": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights",
+          "line": 48,
+          "column": 0,
+          "depth": 3
+        },
+        "visual-differences": {
+          "type": "header",
+          "text": "Visual differences",
+          "value": "visual-differences",
+          "line": 53,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-1": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-1",
+          "line": 57,
+          "column": 0,
+          "depth": 3
+        },
+        "the-way-the-story-is-created--told": {
+          "type": "header",
+          "text": "The way the story is created & told",
+          "value": "the-way-the-story-is-created--told",
+          "line": 60,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-2": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-2",
+          "line": 67,
+          "column": 0,
+          "depth": 3
+        },
+        "what-makes-an-excellent-manga": {
+          "type": "header",
+          "text": "What makes an excellent manga?",
+          "value": "what-makes-an-excellent-manga",
+          "line": 71,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-3": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-3",
+          "line": 77,
+          "column": 0,
+          "depth": 3
+        },
+        "manga-making-process": {
+          "type": "header",
+          "text": "Manga making process",
+          "value": "manga-making-process",
+          "line": 81,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-4": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-4",
+          "line": 95,
+          "column": 0,
+          "depth": 3
+        },
+        "conclusion": {
+          "type": "header",
+          "text": "Conclusion",
+          "value": "conclusion",
+          "line": 98,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "fnhs577xc0bxbeg6v4lku5o",
+      "data": {}
+    },
+    "spyuk5upewy9qpqlcj03z36": {
+      "id": "spyuk5upewy9qpqlcj03z36",
+      "title": "Other Documents",
+      "desc": "",
+      "updated": 1689345356413,
+      "created": 1689345233401,
+      "custom": {},
+      "fname": "other-documents",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "79b1dfa90fa26272d4ed4de935f2177b",
+      "links": [],
+      "anchors": {
+        "welcome-to-the-other-documents-page": {
+          "type": "header",
+          "text": "Welcome to the Other Documents page",
+          "value": "welcome-to-the-other-documents-page",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "f58nknb7ddf7t09538vd0w5"
+      ],
+      "parent": "wn8PE1RhG0znK1alrGFYv",
+      "data": {}
+    },
+    "f58nknb7ddf7t09538vd0w5": {
+      "id": "f58nknb7ddf7t09538vd0w5",
+      "title": "Dendron",
+      "desc": "",
+      "updated": 1689369642132,
+      "created": 1689345413200,
+      "custom": {},
+      "fname": "other-documents.dendron",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "00b024d4292c81aa727547fd496ac87f",
+      "links": [],
+      "anchors": {
+        "making-a-dendron-knoweledge-base": {
+          "type": "header",
+          "text": "Making a Dendron Knoweledge Base",
+          "value": "making-a-dendron-knoweledge-base",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "dod": {
+          "type": "header",
+          "text": "DoD",
+          "value": "dod",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "why-to-use-dendron": {
+          "type": "header",
+          "text": "Why to use dendron?",
+          "value": "why-to-use-dendron",
+          "line": 15,
+          "column": 0,
+          "depth": 3
+        },
+        "tutorial": {
+          "type": "header",
+          "text": "Tutorial",
+          "value": "tutorial",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "spyuk5upewy9qpqlcj03z36",
+      "data": {}
+    },
+    "851xp22233jr4l9woml19un": {
+      "id": "851xp22233jr4l9woml19un",
+      "title": "Experiments",
+      "desc": "",
+      "updated": 1689334725511,
+      "created": 1689333755707,
+      "custom": {},
+      "fname": "experiments",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "3701cd8774ec4237ab60d6694d0f8899",
+      "links": [],
+      "anchors": {
+        "welcome-to-the-experiment-page": {
+          "type": "header",
+          "text": "Welcome to the Experiment page",
+          "value": "welcome-to-the-experiment-page",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "939gmhkqzlecti344zmq5sa",
+        "ismnvheig4kk1lqqb2qqjz7"
+      ],
+      "parent": "wn8PE1RhG0znK1alrGFYv",
+      "data": {}
+    },
+    "ismnvheig4kk1lqqb2qqjz7": {
+      "id": "ismnvheig4kk1lqqb2qqjz7",
+      "title": "Can Gpt Teach Concepts opposite to Incidents",
+      "desc": "",
+      "updated": 1689337554853,
+      "created": 1689336638898,
+      "custom": {},
+      "fname": "experiments.can-gpt-teach-concepts-opposite-to-incidents",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "b555f6c7ddcabd4d0091da2f7bd085ea",
+      "links": [],
+      "anchors": {
+        "parameters": {
+          "type": "header",
+          "text": "Parameters",
+          "value": "parameters",
+          "line": 7,
+          "column": 0,
+          "depth": 2
+        },
+        "dependent": {
+          "type": "header",
+          "text": "Dependent",
+          "value": "dependent",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "independent": {
+          "type": "header",
+          "text": "Independent",
+          "value": "independent",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "control": {
+          "type": "header",
+          "text": "Control",
+          "value": "control",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "the-prompt": {
+          "type": "header",
+          "text": "The prompt",
+          "value": "the-prompt",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "the-incident": {
+          "type": "header",
+          "text": "The Incident",
+          "value": "the-incident",
+          "line": 40,
+          "column": 0,
+          "depth": 2
+        },
+        "teaching-scopes": {
+          "type": "header",
+          "text": "Teaching Scopes",
+          "value": "teaching-scopes",
+          "line": 45,
+          "column": 0,
+          "depth": 2
+        },
+        "output-1": {
+          "type": "header",
+          "text": "Output 1",
+          "value": "output-1",
+          "line": 52,
+          "column": 0,
+          "depth": 2
+        },
+        "insights": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights",
+          "line": 80,
+          "column": 0,
+          "depth": 3
+        },
+        "output-2": {
+          "type": "header",
+          "text": "Output 2",
+          "value": "output-2",
+          "line": 87,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-1": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-1",
+          "line": 101,
+          "column": 0,
+          "depth": 3
+        },
+        "output-3": {
+          "type": "header",
+          "text": "Output 3",
+          "value": "output-3",
+          "line": 106,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-2": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-2",
+          "line": 120,
+          "column": 0,
+          "depth": 3
+        },
+        "output-4": {
+          "type": "header",
+          "text": "Output 4",
+          "value": "output-4",
+          "line": 124,
+          "column": 0,
+          "depth": 2
+        },
+        "insight": {
+          "type": "header",
+          "text": "Insight",
+          "value": "insight",
+          "line": 138,
+          "column": 0,
+          "depth": 3
+        },
+        "conclusion": {
+          "type": "header",
+          "text": "Conclusion",
+          "value": "conclusion",
+          "line": 142,
+          "column": 0,
+          "depth": 2
+        },
+        "note": {
+          "type": "header",
+          "text": "Note",
+          "value": "note",
+          "line": 147,
+          "column": 0,
+          "depth": 2
+        },
+        "teaching-scopes-1": {
+          "type": "header",
+          "text": "Teaching Scopes",
+          "value": "teaching-scopes-1",
+          "line": 151,
+          "column": 0,
+          "depth": 2
+        },
+        "output-5": {
+          "type": "header",
+          "text": "Output 5",
+          "value": "output-5",
+          "line": 157,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-3": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-3",
+          "line": 184,
+          "column": 0,
+          "depth": 3
+        },
+        "output-6": {
+          "type": "header",
+          "text": "Output 6",
+          "value": "output-6",
+          "line": 188,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-4": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-4",
+          "line": 203,
+          "column": 0,
+          "depth": 3
+        },
+        "output-7": {
+          "type": "header",
+          "text": "Output 7",
+          "value": "output-7",
+          "line": 206,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-5": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-5",
+          "line": 234,
+          "column": 0,
+          "depth": 3
+        },
+        "conclusion-1": {
+          "type": "header",
+          "text": "Conclusion",
+          "value": "conclusion-1",
+          "line": 238,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "851xp22233jr4l9woml19un",
+      "data": {}
+    },
+    "939gmhkqzlecti344zmq5sa": {
+      "id": "939gmhkqzlecti344zmq5sa",
+      "title": "Can Gpt Sense Standard",
+      "desc": "This is an experiment to check if GPT can aptly sense std.ids that a particular incident can teach",
+      "updated": 1689336827260,
+      "created": 1689333789749,
+      "custom": {},
+      "fname": "experiments.can-gpt-sense-standard",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "88b9be3dd1cce8492d406abdd554317e",
+      "links": [],
+      "anchors": {
+        "experiment-to-check-if-gpt-can-aptly-sense-stdids-that-a-particular-incident-can-teach": {
+          "type": "header",
+          "text": "Experiment to check if GPT can aptly sense std.ids that a particular incident can teach",
+          "value": "experiment-to-check-if-gpt-can-aptly-sense-stdids-that-a-particular-incident-can-teach",
+          "line": 11,
+          "column": 0,
+          "depth": 1
+        },
+        "dod": {
+          "type": "header",
+          "text": "DoD",
+          "value": "dod",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "parameters": {
+          "type": "header",
+          "text": "Parameters",
+          "value": "parameters",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "independent": {
+          "type": "header",
+          "text": "Independent",
+          "value": "independent",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "dependent": {
+          "type": "header",
+          "text": "Dependent",
+          "value": "dependent",
+          "line": 21,
+          "column": 0,
+          "depth": 3
+        },
+        "control": {
+          "type": "header",
+          "text": "Control",
+          "value": "control",
+          "line": 25,
+          "column": 0,
+          "depth": 3
+        },
+        "incidents": {
+          "type": "header",
+          "text": "Incidents",
+          "value": "incidents",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "prompts": {
+          "type": "header",
+          "text": "Prompts",
+          "value": "prompts",
+          "line": 39,
+          "column": 0,
+          "depth": 2
+        },
+        "output-1": {
+          "type": "header",
+          "text": "Output 1",
+          "value": "output-1",
+          "line": 89,
+          "column": 0,
+          "depth": 2
+        },
+        "insights": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights",
+          "line": 103,
+          "column": 0,
+          "depth": 3
+        },
+        "output-2": {
+          "type": "header",
+          "text": "Output 2",
+          "value": "output-2",
+          "line": 107,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-1": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-1",
+          "line": 121,
+          "column": 0,
+          "depth": 3
+        },
+        "output-3": {
+          "type": "header",
+          "text": "Output 3",
+          "value": "output-3",
+          "line": 126,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-2": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-2",
+          "line": 140,
+          "column": 0,
+          "depth": 3
+        },
+        "output-4": {
+          "type": "header",
+          "text": "Output 4",
+          "value": "output-4",
+          "line": 145,
+          "column": 0,
+          "depth": 2
+        },
+        "insights-3": {
+          "type": "header",
+          "text": "Insights",
+          "value": "insights-3",
+          "line": 159,
+          "column": 0,
+          "depth": 4
+        },
+        "conclusion": {
+          "type": "header",
+          "text": "Conclusion",
+          "value": "conclusion",
+          "line": 163,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "851xp22233jr4l9woml19un",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "wn8PE1RhG0znK1alrGFYv",
+      "title": "Root",
+      "desc": "",
+      "updated": 1689336026010,
+      "created": 1631901573363,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "218a6d5764c2b5aefaded9886d7b317e",
+      "links": [],
+      "anchors": {
+        "welcome-to-comic-gen-kb": {
+          "type": "header",
+          "text": "Welcome to Comic Gen KB",
+          "value": "welcome-to-comic-gen-kb",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "851xp22233jr4l9woml19un",
+        "spyuk5upewy9qpqlcj03z36",
+        "fnhs577xc0bxbeg6v4lku5o"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "\n# Welcome to Comic Gen KB\n\nThis is a knoweledge base of all Research, Experiments and other documents relating to the Comic Gen project!\n"
+    }
+  ],
+  "noteIndex": {
+    "id": "wn8PE1RhG0znK1alrGFYv",
+    "title": "Root",
+    "desc": "",
+    "updated": 1689336026010,
+    "created": 1631901573363,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": "vault"
+    },
+    "contentHash": "218a6d5764c2b5aefaded9886d7b317e",
+    "links": [],
+    "anchors": {
+      "welcome-to-comic-gen-kb": {
+        "type": "header",
+        "text": "Welcome to Comic Gen KB",
+        "value": "welcome-to-comic-gen-kb",
+        "line": 8,
+        "column": 0,
+        "depth": 1
+      }
+    },
+    "children": [
+      "851xp22233jr4l9woml19un",
+      "spyuk5upewy9qpqlcj03z36",
+      "fnhs577xc0bxbeg6v4lku5o"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "\n# Welcome to Comic Gen KB\n\nThis is a knoweledge base of all Research, Experiments and other documents relating to the Comic Gen project!\n"
+  },
+  "vaults": [
+    {
+      "fsPath": "vault"
+    }
+  ]
+}
