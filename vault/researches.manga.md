@@ -2,7 +2,7 @@
 id: t1xyd7s1l2a1ao327c24smk
 title: Manga
 desc: ''
-updated: 1689369619874
+updated: 1689370134196
 created: 1689346754464
 ---
 # Research : Manga and how is it different from regular comics?
@@ -80,18 +80,18 @@ created: 1689346754464
 - If we wanna make a good manga that will hook the users to our app, then we should think about making continous mangas throughout the curriculum where one is the continuation to the other.
 
 ## Manga making process
-1. Scripting
-    1.1 Figure out the genre & theme
-    1.2 workout the characters and their personality + sketch their appearance (it should fit their personality)
-    1.3 Draft your script: from the introduction to the ending, along with the development and the various twists and turns
-    1.4 Split your script into sections. You need to divide your script into several sequences. Each sequence needs to be a single unity: of place, of time or of action (he action takes place in a cafeteria / the hero is getting up / the hero confronts his rival ). Next, a pre-script involves associating a certain number of panels (pages) with each sequence to describe it.
+- Scripting
+    - Figure out the genre & theme
+    - workout the characters and their personality + sketch their appearance (it should fit their personality)
+    - Draft your script: from the introduction to the ending, along with the development and the various twists and turns
+    - Split your script into sections. You need to divide your script into several sequences. Each sequence needs to be a single unity: of place, of time or of action (he action takes place in a cafeteria / the hero is getting up / the hero confronts his rival ). Next, a pre-script involves associating a certain number of panels (pages) with each sequence to describe it.
 
-2. Storyboard
-    2.1 A storyboard is a visual representation of a story, broken down into individual panels. It's used to pre-visualize the sequence of events, typically in film, animation, or comic creation. It includes details like scene direction, dialogue, and action.
+- Storyboard
+    - A storyboard is a visual representation of a story, broken down into individual panels. It's used to pre-visualize the sequence of events, typically in film, animation, or comic creation. It includes details like scene direction, dialogue, and action.
 
-3. Pencil sketching 
+- Pencil sketching 
 
-4. Inking in
+- Inking in
 
 ### Insights
 - This can give an idea of how the script prompt might be
