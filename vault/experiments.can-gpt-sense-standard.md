@@ -2,7 +2,7 @@
 id: 939gmhkqzlecti344zmq5sa
 title: Can Gpt Sense Standard
 desc: 'This is an experiment to check if GPT can aptly sense std.ids that a particular incident can teach'
-updated: 1689335183577
+updated: 1689336827260
 created: 1689333789749
 ---
 
@@ -15,13 +15,13 @@ created: 1689333789749
 
 
 ## Parameters
-- Independent
+### Independent
 - incidents
-- Dependent
+### Dependent
 - script
 - standard ids
 - concept
-- Control
+### Control
 - Prompts
 - GPT-4
 
