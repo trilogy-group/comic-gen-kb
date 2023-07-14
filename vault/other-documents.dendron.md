@@ -2,7 +2,7 @@
 id: f58nknb7ddf7t09538vd0w5
 title: Dendron
 desc: ''
-updated: 1689346373115
+updated: 1689369642132
 created: 1689345413200
 ---
 
@@ -17,6 +17,7 @@ created: 1689345413200
 - Dendron pages are all markdown so you can have fell formatted documents especially when they include code unlike Google Docs
 - Dendron pages are hosted by us, so there's no scare of data being lost like notion
 - Dendron links can be accessibly by anyone without the need of permission unlike docs written in github issues
+- All documents pertaining to the project would be accessible from one site which is a great thing to have
 
 ## Tutorial
 
